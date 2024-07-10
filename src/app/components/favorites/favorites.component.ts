@@ -18,6 +18,6 @@ export class FavoritesComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.jobService.getFavoriteJobs().subscribe((data:any)=>{this.favoritesJob=data});
+    this.jobService.getFavoriteJobs().subscribe((data:Job[])=>{this.favoritesJob=data});
   }
 }

@@ -29,7 +29,6 @@ export class JobpageComponent implements OnInit {
       (job: Job | undefined) => {
         if (job) {
           this.job = job;
-          console.log(this.job);
         } else {
           this.error = 'Job not found';
         }
@@ -41,6 +40,6 @@ export class JobpageComponent implements OnInit {
     );
   }
   goBack(): void {
-    this.router.navigate(['/']); // Navigate to the previous page or any desired route
+    this.router.navigate(['/']);
   }
 }
