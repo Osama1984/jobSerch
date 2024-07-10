@@ -1,0 +1,29 @@
+nav {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    width:88%;
+    background-color: rgb(255, 255, 255);
+}
+ul {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width:100%;
+    background-color: transparent;
+}
+li{
+    display: inline-block;
+    color:black;
+    cursor: pointer;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:600;
+}
+
+.active-link {
+    font-weight: bold;
+    color: blue;
+  }

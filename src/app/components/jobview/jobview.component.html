@@ -1,0 +1,15 @@
+<ng-container *ngIf="job">
+  <div class="job-container">
+    <img [src]="job.companyLogo" class="company-logo"/>
+    <div class="job-details">
+      <h3 class="job-title" (click)="redirectToJobPage(job)">{{job.title}}</h3>
+      <div class="job-info">
+        <h5>Company: {{job.companyName}}</h5>
+        <h5>Reference: {{job.reference}}</h5>
+      </div>
+    </div>
+    <div class="job-star" *ngIf="!isOnFavoritesPage()">
+      <app-jobstar [job]="job"></app-jobstar>
+    </div>
+  </div>
+</ng-container>

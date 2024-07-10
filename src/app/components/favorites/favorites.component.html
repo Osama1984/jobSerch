@@ -1,0 +1,11 @@
+<ng-container *ngIf="favoritesJob && favoritesJob.length > 0; else noFavorites">
+    <div *ngFor="let job of favoritesJob; let i = index" class="job-item">
+      <app-jobview [job]="job"></app-jobview>
+    </div>
+  </ng-container>
+  
+  <ng-template #noFavorites>
+    <div class="no-favorites-message">
+      No favorite jobs found.
+    </div>
+  </ng-template>

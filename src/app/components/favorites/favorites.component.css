@@ -1,0 +1,9 @@
+.job-item {
+    margin-bottom: 10px;
+    border: none;
+  }
+  
+  .no-favorites-message {
+    font-style: italic;
+    color: #999;
+  }
