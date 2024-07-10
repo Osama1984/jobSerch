@@ -45,3 +45,24 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .job-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-details {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .job-info {
+    gap: 0.5rem;
+  }
+
+  .job-star {
+    justify-content: center;
+    width: 100%;
+  }
+}
